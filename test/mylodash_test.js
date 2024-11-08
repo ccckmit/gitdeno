@@ -3,4 +3,5 @@ import * as _ from "../src/mylodash.js";
 
 Deno.test("default", () => {
   assertEquals(_.defaults({a:1}, {b:2}), {a:1, b:2})
+  assertEquals(_.defaults({a:1,c:3}, {b:2}, {c:5}), {a:1, b:2, c:3})
 })
